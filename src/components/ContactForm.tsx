@@ -12,7 +12,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    phone: "", // Keep this in the form state
     company: "",
     message: "",
   });
@@ -39,13 +39,14 @@ const ContactForm = () => {
       console.log("Attempting to submit form to Supabase...");
       
       // Insert the form data into Supabase
+      // Note: We're removing the phone field as it doesn't exist in the database
       const { error: supabaseError } = await supabase
         .from('contact_messages')
         .insert([
           { 
             name: formData.name,
             email: formData.email,
-            phone: formData.phone,
+            // Phone field is omitted since it doesn't exist in the database
             company: formData.company,
             message: formData.message,
             created_at: new Date().toISOString()
