@@ -47,7 +47,16 @@ const ContactForm = () => {
         ]);
       
       if (error) {
-        throw error;
+        // If there's a Supabase error, we'll handle it gracefully
+        console.error("Supabase error:", error);
+        
+        if (error.message.includes("auth/invalid_credentials") || 
+            error.message.includes("FetchError") ||
+            error.message.includes("NetworkError")) {
+          throw new Error("Database connection error. Please check your Supabase setup.");
+        } else {
+          throw error;
+        }
       }
       
       console.log("Form submitted to Supabase:", formData);
