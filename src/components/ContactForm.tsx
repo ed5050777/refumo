@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { supabase } from "@/lib/supabase";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -30,14 +31,26 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      // In a real application, you would send this data to your backend
-      console.log("Form submitted:", formData);
+      // Insert the form data into Supabase
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([
+          { 
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.company,
+            message: formData.message,
+            created_at: new Date().toISOString()
+          }
+        ]);
       
-      // Simulate API delay
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      if (error) {
+        throw error;
+      }
       
+      console.log("Form submitted to Supabase:", formData);
       toast.success("Thank you for contacting us! We'll be in touch soon.");
       
       // Reset form
