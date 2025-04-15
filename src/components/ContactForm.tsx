@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { AlertCircle } from "lucide-react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -16,6 +18,7 @@ const ContactForm = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -30,10 +33,13 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
     try {
+      console.log("Attempting to submit form to Supabase...");
+      
       // Insert the form data into Supabase
-      const { error } = await supabase
+      const { error: supabaseError } = await supabase
         .from('contact_messages')
         .insert([
           { 
@@ -46,20 +52,12 @@ const ContactForm = () => {
           }
         ]);
       
-      if (error) {
-        // If there's a Supabase error, we'll handle it gracefully
-        console.error("Supabase error:", error);
-        
-        if (error.message.includes("auth/invalid_credentials") || 
-            error.message.includes("FetchError") ||
-            error.message.includes("NetworkError")) {
-          throw new Error("Database connection error. Please check your Supabase setup.");
-        } else {
-          throw error;
-        }
+      if (supabaseError) {
+        console.error("Supabase error:", supabaseError);
+        throw supabaseError;
       }
       
-      console.log("Form submitted to Supabase:", formData);
+      console.log("Form submitted successfully to Supabase:", formData);
       toast.success("Thank you for contacting us! We'll be in touch soon.");
       
       // Reset form
@@ -70,8 +68,9 @@ const ContactForm = () => {
         company: "",
         message: "",
       });
-    } catch (error) {
-      console.error("Error submitting form:", error);
+    } catch (err: any) {
+      console.error("Error submitting form:", err);
+      setError("There was an error submitting your message. Please try again.");
       toast.error("There was an error submitting your message. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -80,6 +79,13 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {error && (
+        <Alert variant="destructive">
+          <AlertCircle className="h-4 w-4" />
+          <AlertDescription>{error}</AlertDescription>
+        </Alert>
+      )}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
           <label htmlFor="name" className="text-sm font-medium">
