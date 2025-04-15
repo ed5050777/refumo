@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,7 +11,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "", // Keep this in the form state
+    phone: "", 
     company: "",
     message: "",
   });
@@ -38,15 +37,14 @@ const ContactForm = () => {
     try {
       console.log("Attempting to submit form to Supabase...");
       
-      // Insert the form data into Supabase
-      // Note: We're removing the phone field as it doesn't exist in the database
+      // Insert the form data into Supabase, now including the phone field
       const { error: supabaseError } = await supabase
         .from('contact_messages')
         .insert([
           { 
             name: formData.name,
             email: formData.email,
-            // Phone field is omitted since it doesn't exist in the database
+            phone: formData.phone, 
             company: formData.company,
             message: formData.message,
             created_at: new Date().toISOString()
