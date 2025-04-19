@@ -1,4 +1,5 @@
 
+import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -14,7 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
+import { Mail, Phone, User, MessageSquare } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -37,33 +38,35 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (data: FormData) => {
+    const formData = new URLSearchParams();
+    formData.append("website", "Refumo");
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("phone", data.phone || "");
+    formData.append("company", "--");
+    formData.append("message", data.message);
+
     try {
       toast.loading("Sending your message...");
-      
-      const { error: supabaseError } = await supabase
-        .from('contact_messages')
-        .insert([
-          { 
-            name: data.name,
-            email: data.email,
-            phone: data.phone || '',
-            company: '--',
-            message: data.message,
-            created_at: new Date().toISOString()
-          }
-        ]);
-      
-      if (supabaseError) {
-        throw supabaseError;
-      }
+
+      const response = await fetch("https://script.google.com/macros/s/AKfycbzU22lb2iYGN1aSB1FKLTbi86H2_Hau5pSTXzhvKwfGn4MXPLT9MZ_3LAxiBpsmR7ebfA/exec", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formData.toString()
+      });
+
+      const result = await response.text();
+      console.log('Success:', result);
 
       toast.dismiss();
       toast.success("Thank you for your message! We'll get back to you soon.");
       form.reset();
     } catch (error) {
-      console.error("Error submitting form:", error);
       toast.dismiss();
       toast.error("Failed to send message. Please try again later.");
+      console.error("Form submission error:", error);
     }
   };
 
@@ -77,11 +80,14 @@ const ContactForm = () => {
             <FormItem>
               <FormLabel className="text-sm font-medium">Name</FormLabel>
               <FormControl>
-                <Input 
-                  placeholder="Your name" 
-                  className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
-                  {...field} 
-                />
+                <div className="relative">
+                  <Input 
+                    placeholder="Your name" 
+                    className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    {...field} 
+                  />
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                </div>
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -94,12 +100,15 @@ const ContactForm = () => {
             <FormItem>
               <FormLabel className="text-sm font-medium">Email</FormLabel>
               <FormControl>
-                <Input 
-                  type="email" 
-                  placeholder="your@email.com" 
-                  className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
-                  {...field} 
-                />
+                <div className="relative">
+                  <Input 
+                    type="email" 
+                    placeholder="your@email.com" 
+                    className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    {...field} 
+                  />
+                  <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                </div>
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -112,12 +121,15 @@ const ContactForm = () => {
             <FormItem>
               <FormLabel className="text-sm font-medium">Phone (optional)</FormLabel>
               <FormControl>
-                <Input 
-                  type="tel" 
-                  placeholder="Your phone number" 
-                  className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
-                  {...field} 
-                />
+                <div className="relative">
+                  <Input 
+                    type="tel" 
+                    placeholder="Your phone number" 
+                    className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    {...field} 
+                  />
+                  <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                </div>
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -130,11 +142,14 @@ const ContactForm = () => {
             <FormItem>
               <FormLabel className="text-sm font-medium">Message</FormLabel>
               <FormControl>
-                <Textarea 
-                  placeholder="Your message" 
-                  className="min-h-[120px] bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
-                  {...field} 
-                />
+                <div className="relative">
+                  <Textarea 
+                    placeholder="Your message" 
+                    className="min-h-[120px] bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    {...field} 
+                  />
+                  <MessageSquare className="absolute left-3 top-4 text-gray-400 h-4 w-4" />
+                </div>
               </FormControl>
               <FormMessage />
             </FormItem>
