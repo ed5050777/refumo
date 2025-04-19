@@ -1,174 +1,153 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import { toast } from "sonner";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { AlertCircle } from "lucide-react";
+
+const formSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Invalid email address"),
+  phone: z.string().optional(),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+type FormData = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "", 
-    company: "",
-    message: "",
+  const form = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    },
   });
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-
+  const onSubmit = async (data: FormData) => {
     try {
-      console.log("Attempting to submit form to Supabase...");
+      toast.loading("Sending your message...");
       
-      // Insert the form data into Supabase, now including the phone field
       const { error: supabaseError } = await supabase
         .from('contact_messages')
         .insert([
           { 
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone, 
-            company: formData.company,
-            message: formData.message,
+            name: data.name,
+            email: data.email,
+            phone: data.phone || '',
+            company: '--',
+            message: data.message,
             created_at: new Date().toISOString()
           }
         ]);
       
       if (supabaseError) {
-        console.error("Supabase error:", supabaseError);
         throw supabaseError;
       }
-      
-      console.log("Form submitted successfully to Supabase:", formData);
-      toast.success("Thank you for contacting us! We'll be in touch soon.");
-      
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        message: "",
-      });
-    } catch (err: any) {
-      console.error("Error submitting form:", err);
-      setError("There was an error submitting your message. Please try again.");
-      toast.error("There was an error submitting your message. Please try again.");
-    } finally {
-      setIsSubmitting(false);
+
+      toast.dismiss();
+      toast.success("Thank you for your message! We'll get back to you soon.");
+      form.reset();
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.dismiss();
+      toast.error("Failed to send message. Please try again later.");
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      {error && (
-        <Alert variant="destructive">
-          <AlertCircle className="h-4 w-4" />
-          <AlertDescription>{error}</AlertDescription>
-        </Alert>
-      )}
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <label htmlFor="name" className="text-sm font-medium">
-            Full Name
-          </label>
-          <Input
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            placeholder="John Doe"
-            className="w-full"
-          />
-        </div>
-        
-        <div className="space-y-2">
-          <label htmlFor="email" className="text-sm font-medium">
-            Email Address
-          </label>
-          <Input
-            id="email"
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            placeholder="john@example.com"
-            className="w-full"
-          />
-        </div>
-        
-        <div className="space-y-2">
-          <label htmlFor="phone" className="text-sm font-medium">
-            Phone Number
-          </label>
-          <Input
-            id="phone"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="+1 (555) 123-4567"
-            className="w-full"
-          />
-        </div>
-        
-        <div className="space-y-2">
-          <label htmlFor="company" className="text-sm font-medium">
-            Company (Optional)
-          </label>
-          <Input
-            id="company"
-            name="company"
-            value={formData.company}
-            onChange={handleChange}
-            placeholder="Your Company Ltd."
-            className="w-full"
-          />
-        </div>
-      </div>
-      
-      <div className="space-y-2">
-        <label htmlFor="message" className="text-sm font-medium">
-          Message
-        </label>
-        <Textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          placeholder="Tell us about your investment needs or questions"
-          className="min-h-[120px] w-full"
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <FormField
+          control={form.control}
+          name="name"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium">Name</FormLabel>
+              <FormControl>
+                <Input 
+                  placeholder="Your name" 
+                  className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
+                  {...field} 
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
         />
-      </div>
-      
-      <Button 
-        type="submit" 
-        className="w-full sm:w-auto bg-refumo-coral hover:bg-refumo-lightcoral text-white"
-        disabled={isSubmitting}
-      >
-        {isSubmitting ? "Sending..." : "Send Message"}
-      </Button>
-    </form>
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium">Email</FormLabel>
+              <FormControl>
+                <Input 
+                  type="email" 
+                  placeholder="your@email.com" 
+                  className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
+                  {...field} 
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium">Phone (optional)</FormLabel>
+              <FormControl>
+                <Input 
+                  type="tel" 
+                  placeholder="Your phone number" 
+                  className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
+                  {...field} 
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="message"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="text-sm font-medium">Message</FormLabel>
+              <FormControl>
+                <Textarea 
+                  placeholder="Your message" 
+                  className="min-h-[120px] bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral" 
+                  {...field} 
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button 
+          type="submit" 
+          className="w-full bg-refumo-coral hover:bg-refumo-lightcoral text-white font-medium"
+        >
+          Send Message
+        </Button>
+      </form>
+    </Form>
   );
 };
 
