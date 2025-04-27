@@ -1,12 +1,17 @@
+
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
 import TradingViewWidget from "./TradingViewWidget";
+import TradingViewTimeline from "./TradingViewTimeline";
 
 const Footer = () => {
   return (
     <>
       <div className="bg-white py-4">
         <TradingViewWidget />
+        <div className="container mx-auto px-4 mt-4">
+          <TradingViewTimeline />
+        </div>
       </div>
       <footer className="bg-refumo-darkblue text-white">
         <div className="container mx-auto px-4 py-12 md:py-16">
