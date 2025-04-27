@@ -1,8 +1,12 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const TradingViewTimeline = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scriptRef = useRef<HTMLScriptElement | null>(null);
+
   useEffect(() => {
+    // Create script element
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
@@ -17,21 +21,26 @@ const TradingViewTimeline = () => {
       locale: "en"
     });
 
-    const widgetContainer = document.querySelector('.tradingview-timeline-container__widget');
-    if (widgetContainer) {
-      widgetContainer.appendChild(script);
+    // Store reference to the script
+    scriptRef.current = script;
+
+    // Append script to widget container
+    if (containerRef.current) {
+      containerRef.current.appendChild(script);
     }
 
+    // Cleanup function
     return () => {
-      if (widgetContainer && script) {
-        widgetContainer.removeChild(script);
+      // Only attempt to remove if the script is still a child of the container
+      if (containerRef.current && scriptRef.current && scriptRef.current.parentNode === containerRef.current) {
+        containerRef.current.removeChild(scriptRef.current);
       }
     };
   }, []);
 
   return (
     <div className="tradingview-timeline-container w-full">
-      <div className="tradingview-timeline-container__widget"></div>
+      <div className="tradingview-timeline-container__widget" ref={containerRef}></div>
       <div className="tradingview-widget-copyright text-center text-sm mt-2">
         <a
           href="https://www.tradingview.com/"
