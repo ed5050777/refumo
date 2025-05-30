@@ -15,7 +15,7 @@ const Expertise = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-lg mb-6">Our Expertise</h1>
             <p className="text-lg md:text-xl text-gray-300 mb-6">
-              With over €5 billion in transactions and 100+ years of combined experience,
+              With over €15 billion in transactions and 100+ years of combined experience,
               we assess opportunities by merit—not limits.
             </p>
           </div>

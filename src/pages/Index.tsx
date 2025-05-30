@@ -27,10 +27,10 @@ const Index = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-10 italic">
-              "The greatest danger in times of turbulence is not the turbulence – it is to act with yesterday's logic."
+            "Markets shift. Logic evolves. Advantage belongs to those who adapt before it's obvious."
             </p>
             
-            <p className="text-gray-300 mb-10">— Peter F. Drucker</p>
+            <p className="text-gray-300 mb-10">— Refumo Insights</p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/expertise" className="btn-primary">
@@ -53,10 +53,11 @@ const Index = () => {
               Pan-European Property Investment | Value-Driven Strategy | Enduring Relationships
             </p>
             <p className="text-gray-700">
-              Refumo Investments is a real estate investment company specializing in the acquisition 
-              and management of high-growth property portfolios across Europe. With affiliated offices 
-              in London, Luxembourg, Switzerland, and Gibraltar, we support a global client base seeking 
-              intelligent, forward-thinking strategies.
+              Refumo is a pan-European real estate platform, based in London, Luxembourg and
+              Switzerland. It is primarily active in Western Europe, especially the DACH region and
+              the UK. The group invests institutional capital in debt and equity strategies with focus on
+              special situation assets. With over 25 years of experience, the partners have structured
+              transactions of more than €15 billion in various real estate asset classes..
             </p>
             <p className="text-gray-700 mt-4">
               As a privately held firm, Refumo prioritizes the fiduciary interests of our investors—their 
@@ -118,12 +119,12 @@ const Index = () => {
               icon={<BarChart4 size={32} />}
             />
             <ServiceCard 
-              title="Asset Disposition, Acquisition & Subleasing"
+              title="Asset Disposition, Acquisition"
               description="Guidance across the asset life cycle—from entry to exit."
               icon={<Briefcase size={32} />}
             />
             <ServiceCard 
-              title="Portfolio Optimization & Lease Advisory"
+              title="Portfolio Optimization"
               description="Multisite lease rationalization and cost optimization."
               icon={<ThumbsUp size={32} />}
             />
@@ -148,7 +149,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="heading-md mb-6">Our Expertise</h2>
             <p className="text-gray-700">
-              With over €5 billion in transactions and 100+ years of combined experience, 
+              With over €15  billion in transactions and 100+ years of combined experience, 
               we assess opportunities by merit—not limits.
             </p>
           </div>
@@ -160,8 +161,8 @@ const Index = () => {
               icon={<BarChart4 size={32} />}
             />
             <ExpertiseCard 
-              title="Due Diligence"
-              description="Best-in-class standards with strong compliance, KYC, and execution frameworks."
+              title="Capital Raise"
+              description="Best-in-class standards with strong network and execution frameworks."
               icon={<Shield size={32} />}
             />
             <ExpertiseCard 

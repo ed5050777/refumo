@@ -86,7 +86,7 @@ const Services = () => {
               icon={<BookOpen size={32} />}
             />
             <ServiceCard 
-              title="Property Management"
+              title="Property and Asset Management"
               description="End-to-end management solutions for commercial and residential properties."
               icon={<Home size={32} />}
             />
