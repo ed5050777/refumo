@@ -41,10 +41,11 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Head Office</h3>
-                      <p className="text-gray-700">
-                        32 St George Street<br />
-                        London W1S 2EA<br />
-                        United Kingdom
+                          <p className="text-gray-700">
+                        Luxembourg (HQ)<br />
+                        10 Rue Beaumont, L-1219 Luxembourg<br /><br />
+                        Switzerland<br />
+                        Poststrasse 14, 6300 Zug
                       </p>
                     </div>
                   </div>
@@ -80,10 +81,13 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Additional Locations</h3>
                       <p className="text-gray-700">
-                        Luxembourg (HQ)<br />
-                        10 Rue Beaumont, L-1219 Luxembourg<br /><br />
-                        Switzerland<br />
-                        Poststrasse 14, 6300 Zug
+                        32 St George Street<br />
+                        London W1S 2EA<br />
+                        United Kingdom<br />
+
+                        <br />
+                        Irish Place, Irish Town,<br /> 
+                        Gibraltar, GX11 1AA
                       </p>
                     </div>
                   </div>
