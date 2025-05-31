@@ -14,9 +14,14 @@ const Header = () => {
     <header className="absolute w-full z-50">
       <div className="container mx-auto px-4 md:px-6 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-white text-3xl font-bold">
-            REFUMO
+         <Link to="/">
+            <img 
+            src="Refumo new - no background.png" 
+            alt="Refumo Logo" 
+            className="h-10 md:h-12 object-contain"
+            />
           </Link>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
