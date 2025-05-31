@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
          <Link to="/">
             <img 
-            src="Refumo new - no background.png" 
+            src="/refumo.png" 
             alt="Refumo Logo" 
             className="h-10 md:h-12 object-contain"
             />
