@@ -21,7 +21,7 @@ const Footer = () => {
 
             <Link to="/">
             <img 
-            src="/Refumo new - no backround.png" 
+            src="/refumo orange no backround.png" 
             alt="Refumo Logo" 
             className="h-24 md:h-12 object-contain"
             />
