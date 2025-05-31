@@ -18,7 +18,15 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company Info */}
             <div>
-              <h3 className="text-xl font-bold mb-4">REFUMO</h3>
+
+            <Link to="/">
+            <img 
+            src="/Refumo new - no backround.png" 
+            alt="Refumo Logo" 
+            className="h-24 md:h-12 object-contain"
+            />
+            </Link>
+
               <p className="text-gray-300 mb-4">
                 Pan-European Property Investment<br />
                 Value-Driven Strategy<br />
