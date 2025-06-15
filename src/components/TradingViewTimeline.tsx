@@ -16,7 +16,7 @@ const TradingViewTimeline = () => {
       isTransparent: true,
       displayMode: "regular",
       width: "100%",
-      height: 400,
+      height: 200,
       colorTheme: "light",
       locale: "en",
       market: "index"
@@ -41,7 +41,7 @@ const TradingViewTimeline = () => {
 
   return (
     <div className="tradingview-timeline-container w-full">
-      <div className="tradingview-timeline-container__widget h-96" ref={containerRef}></div>
+      <div className="tradingview-timeline-container__widget h-48" ref={containerRef}></div>
       <div className="tradingview-widget-copyright text-center text-sm mt-2">
         <a
           href="https://www.tradingview.com/"
