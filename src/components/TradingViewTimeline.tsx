@@ -12,13 +12,14 @@ const TradingViewTimeline = () => {
     script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
     script.async = true;
     script.innerHTML = JSON.stringify({
-      feedMode: "all_symbols",
-      isTransparent: false,
-      displayMode: "adaptive",
+      feedMode: "market",
+      isTransparent: true,
+      displayMode: "regular",
       width: "100%",
-      height: 550,
+      height: "100%",
       colorTheme: "light",
-      locale: "en"
+      locale: "en",
+      market: "index"
     });
 
     // Store reference to the script
