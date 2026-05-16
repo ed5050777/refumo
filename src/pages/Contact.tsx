@@ -44,8 +44,6 @@ const Contact = () => {
                           <p className="text-gray-700">
                         Luxembourg (HQ)<br />
                         10 Rue Beaumont, L-1219 Luxembourg<br /><br />
-                        Switzerland<br />
-                        Poststrasse 14, 6300 Zug
                       </p>
                     </div>
                   </div>
