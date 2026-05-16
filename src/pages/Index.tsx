@@ -101,7 +101,7 @@ const Index = () => {
       </section>
       
       {/* Services Overview */}
-      <section className="section bg-gray-50">
+      <section id="services" className="section bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="heading-md mb-6">Our Services at a Glance</h2>
@@ -144,7 +144,7 @@ const Index = () => {
       </section>
       
       {/* Expertise Section */}
-      <section className="section bg-gray-100">
+      <section id="expertise" className="section bg-gray-100 scroll-mt-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="heading-md mb-6">Our Expertise</h2>
@@ -180,7 +180,7 @@ const Index = () => {
       </section>
       
       {/* CTA Section */}
-      <section className="section bg-refumo-darkblue text-white">
+      <section id="contact" className="section bg-refumo-darkblue text-white scroll-mt-24">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="heading-md mb-6">Ready to Explore Investment Opportunities?</h2>
           <p className="text-gray-300 max-w-2xl mx-auto mb-10">
