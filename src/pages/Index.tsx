@@ -57,7 +57,7 @@ const Index = () => {
               Switzerland. It is primarily active in Western Europe, especially the DACH region and
               the UK. The group invests institutional capital in debt and equity strategies with focus on
               special situation assets. With over 25 years of experience, the partners have structured
-              transactions of more than €15 billion in various real estate asset classes..
+              transactions of more than €3 billion in various real estate asset classes..
             </p>
             <p className="text-gray-700 mt-4">
               As a privately held firm, Refumo prioritizes the fiduciary interests of our investors—their 
@@ -149,7 +149,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="heading-md mb-6">Our Expertise</h2>
             <p className="text-gray-700">
-              With over €15  billion in transactions and 100+ years of combined experience, 
+              With over €3 billion in transactions and 100+ years of combined experience, 
               we assess opportunities by merit—not limits.
             </p>
           </div>
