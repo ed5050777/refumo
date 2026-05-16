@@ -90,7 +90,7 @@ const Footer = () => {
                 <li className="flex items-start">
                   <MapPin size={20} className="mr-2 mt-1 text-refumo-coral" />
                   <span className="text-gray-300">
-                    32 St George Street, London W1S 2EA
+                    10 Rue Beaumont, L-1219 Luxembourg
                   </span>
                 </li>
                 <li className="flex items-center">
