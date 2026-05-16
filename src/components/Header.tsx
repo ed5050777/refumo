@@ -28,15 +28,15 @@ const Header = () => {
             <Link to="/" className="text-white hover:text-refumo-coral transition-colors">
               Home
             </Link>
-            <Link to="/services" className="text-white hover:text-refumo-coral transition-colors">
+            <a href="/#services" className="text-white hover:text-refumo-coral transition-colors">
               Services
-            </Link>
-            <Link to="/expertise" className="text-white hover:text-refumo-coral transition-colors">
+            </a>
+            <a href="/#expertise" className="text-white hover:text-refumo-coral transition-colors">
               Expertise
-            </Link>
-            <Link to="/contact" className="text-white hover:text-refumo-coral transition-colors">
+            </a>
+            <a href="/#contact" className="text-white hover:text-refumo-coral transition-colors">
               Contact
-            </Link>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -58,27 +58,27 @@ const Header = () => {
               >
                 Home
               </Link>
-              <Link 
-                to="/services" 
+              <a
+                href="/#services"
                 className="py-2 hover:text-refumo-coral transition-colors"
                 onClick={toggleMenu}
               >
                 Services
-              </Link>
-              <Link 
-                to="/expertise" 
+              </a>
+              <a
+                href="/#expertise"
                 className="py-2 hover:text-refumo-coral transition-colors"
                 onClick={toggleMenu}
               >
                 Expertise
-              </Link>
-              <Link 
-                to="/contact" 
+              </a>
+              <a
+                href="/#contact"
                 className="py-2 hover:text-refumo-coral transition-colors"
                 onClick={toggleMenu}
               >
                 Contact
-              </Link>
+              </a>
             </nav>
           </div>
         </div>
