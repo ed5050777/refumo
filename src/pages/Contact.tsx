@@ -72,23 +72,6 @@ const Contact = () => {
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral mr-4">
-                      <Globe size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg mb-1">Additional Locations</h3>
-                      <p className="text-gray-700">
-                        32 St George Street<br />
-                        London W1S 2EA<br />
-                        United Kingdom<br />
-
-                        <br />
-                        Irish Place, Irish Town,<br /> 
-                        Gibraltar, GX11 1AA
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
               
