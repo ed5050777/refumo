@@ -164,7 +164,7 @@ const Expertise = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-              <div className="text-4xl font-bold text-refumo-coral mb-2">€5B+</div>
+              <div className="text-4xl font-bold text-refumo-coral mb-2">€3B+</div>
               <p className="text-gray-700">Transaction Volume</p>
             </div>
             
