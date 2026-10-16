@@ -33,21 +33,21 @@ const TermsOfService = () => {
             
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold mb-4">1. Agreement to Terms</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">1. Agreement to Terms</h2>
                 <p className="text-gray-700">
                   By accessing this website, you agree to these Terms of Service. If you do not agree, please do not use the site.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">2. Use of the Website</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">2. Use of the Website</h2>
                 <p className="text-gray-700">
                   You may use this website only for lawful purposes and in accordance with these Terms. Misuse or unauthorized use is strictly prohibited.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">3. Investment Disclaimer</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">3. Investment Disclaimer</h2>
                 <p className="text-gray-700">
                   All content provided is for informational purposes only and does not constitute financial, legal, or investment advice. 
                   Refumo Investments does not guarantee the accuracy or completeness of the content.
@@ -55,7 +55,7 @@ const TermsOfService = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">4. Intellectual Property</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">4. Intellectual Property</h2>
                 <p className="text-gray-700">
                   All content on this site—including logos, text, graphics, and software—is the property of Refumo Investments and protected by copyright laws. 
                   No part may be copied or used without written permission.
@@ -63,35 +63,35 @@ const TermsOfService = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">5. Third-Party Links</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">5. Third-Party Links</h2>
                 <p className="text-gray-700">
                   Our site may contain links to third-party websites. We are not responsible for their content, terms, or privacy policies.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">6. Limitation of Liability</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">6. Limitation of Liability</h2>
                 <p className="text-gray-700">
                   Refumo Investments shall not be liable for any direct or indirect damages arising from your use of this website.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">7. Modifications</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">7. Modifications</h2>
                 <p className="text-gray-700">
                   We reserve the right to update or change these Terms at any time. Continued use of the site constitutes acceptance of those changes.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">8. Governing Law</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">8. Governing Law</h2>
                 <p className="text-gray-700">
                   These Terms shall be governed by the laws of England and Wales.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">9. Contact</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">9. Contact</h2>
                 <p className="text-gray-700">
                   Questions about these Terms may be directed to:
                   <br />

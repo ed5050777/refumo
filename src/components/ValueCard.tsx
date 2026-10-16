@@ -9,10 +9,10 @@ interface ValueCardProps {
 
 const ValueCard = ({ title, description, icon }: ValueCardProps) => {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:shadow-xl">
-      <div className="text-refumo-coral mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+    <div className="card-surface h-full group">
+      <div className="icon-badge mb-6 transition-colors group-hover:bg-refumo-coral group-hover:text-white">{icon}</div>
+      <h3 className="text-xl font-display font-semibold text-refumo-darkblue mb-3">{title}</h3>
+      <p className="text-gray-600 leading-relaxed">{description}</p>
     </div>
   );
 };

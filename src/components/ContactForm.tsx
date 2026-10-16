@@ -83,7 +83,7 @@ const ContactForm = () => {
                 <div className="relative">
                   <Input 
                     placeholder="Your name" 
-                    className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    className="h-12 rounded-xl bg-white border-gray-200 focus-visible:ring-refumo-coral/40 focus:border-refumo-coral pl-10 text-base md:text-sm" 
                     {...field} 
                   />
                   <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -104,7 +104,7 @@ const ContactForm = () => {
                   <Input 
                     type="email" 
                     placeholder="your@email.com" 
-                    className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    className="h-12 rounded-xl bg-white border-gray-200 focus-visible:ring-refumo-coral/40 focus:border-refumo-coral pl-10 text-base md:text-sm" 
                     {...field} 
                   />
                   <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -125,7 +125,7 @@ const ContactForm = () => {
                   <Input 
                     type="tel" 
                     placeholder="Your phone number" 
-                    className="bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    className="h-12 rounded-xl bg-white border-gray-200 focus-visible:ring-refumo-coral/40 focus:border-refumo-coral pl-10 text-base md:text-sm" 
                     {...field} 
                   />
                   <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -145,7 +145,7 @@ const ContactForm = () => {
                 <div className="relative">
                   <Textarea 
                     placeholder="Your message" 
-                    className="min-h-[120px] bg-white/50 backdrop-blur-sm border-gray-200 focus:border-refumo-coral pl-10" 
+                    className="min-h-[140px] rounded-xl bg-white border-gray-200 focus-visible:ring-refumo-coral/40 focus:border-refumo-coral pl-10 text-base md:text-sm" 
                     {...field} 
                   />
                   <MessageSquare className="absolute left-3 top-4 text-gray-400 h-4 w-4" />
@@ -157,7 +157,7 @@ const ContactForm = () => {
         />
         <Button 
           type="submit" 
-          className="w-full bg-refumo-coral hover:bg-refumo-lightcoral text-white font-medium"
+          className="w-full h-12 rounded-full bg-refumo-coral hover:bg-refumo-lightcoral text-white font-medium tracking-wide transition-all hover:-translate-y-0.5"
         >
           Send Message
         </Button>

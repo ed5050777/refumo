@@ -11,11 +11,11 @@ const Services = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-refumo-darkblue text-white relative pt-32 pb-20 md:pt-40 md:pb-24">
+      <section className="bg-refumo-darkblue text-white relative pt-36 pb-20 md:pt-48 md:pb-28">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-lg mb-6">Our Services</h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-6">
+            <p className="text-lg md:text-xl text-gray-300/90 leading-relaxed mb-6">
               Comprehensive real estate investment solutions tailored to your specific needs
             </p>
           </div>
@@ -25,7 +25,7 @@ const Services = () => {
       {/* Services Overview */}
       <section className="section bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">Comprehensive Advisory Solutions</h2>
             <p className="text-gray-700">
               Refumo delivers end-to-end advisory solutions across asset classes—residential, commercial, 
@@ -97,7 +97,7 @@ const Services = () => {
       {/* Asset Classes */}
       <section className="section bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">Asset Classes We Serve</h2>
             <p className="text-gray-700">
               Our expertise spans across multiple property types, enabling comprehensive solutions regardless of asset class.
@@ -105,32 +105,32 @@ const Services = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="card-surface">
               <h3 className="text-xl font-semibold mb-3">Residential</h3>
               <p className="text-gray-600">Multi-family, single-family, student housing, and senior living properties.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="card-surface">
               <h3 className="text-xl font-semibold mb-3">Commercial</h3>
               <p className="text-gray-600">Office buildings, corporate campuses, and coworking spaces.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="card-surface">
               <h3 className="text-xl font-semibold mb-3">Retail</h3>
               <p className="text-gray-600">Shopping centers, high street retail, and experiential retail venues.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="card-surface">
               <h3 className="text-xl font-semibold mb-3">Industrial</h3>
               <p className="text-gray-600">Warehouses, distribution centers, and manufacturing facilities.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="card-surface">
               <h3 className="text-xl font-semibold mb-3">Hospitality</h3>
               <p className="text-gray-600">Hotels, resorts, and service-oriented properties.</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <div className="card-surface">
               <h3 className="text-xl font-semibold mb-3">Mixed-Use</h3>
               <p className="text-gray-600">Integrated developments combining multiple property types.</p>
             </div>

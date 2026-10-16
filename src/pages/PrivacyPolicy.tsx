@@ -35,7 +35,7 @@ const PrivacyPolicy = () => {
             
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold mb-4">1. Who We Are</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">1. Who We Are</h2>
                 <p className="text-gray-700">
                   Refumo Investments ("Refumo", "we", "our", or "us") is a real estate investment firm operating across Europe. 
                   This Privacy Policy outlines how we collect, use, store, and protect your personal information.
@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">2. Information We Collect</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">2. Information We Collect</h2>
                 <p className="text-gray-700 mb-4">
                   We may collect and process the following data:
                 </p>
@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">3. How We Use Your Data</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">3. How We Use Your Data</h2>
                 <p className="text-gray-700 mb-4">
                   We use personal information for:
                 </p>
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">4. Legal Basis for Processing</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">4. Legal Basis for Processing</h2>
                 <p className="text-gray-700 mb-4">
                   Our data collection is based on:
                 </p>
@@ -81,28 +81,28 @@ const PrivacyPolicy = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">5. How We Protect Your Data</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">5. How We Protect Your Data</h2>
                 <p className="text-gray-700">
                   We implement appropriate security measures including encryption, firewalls, and access controls to safeguard your information.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">6. Sharing of Information</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">6. Sharing of Information</h2>
                 <p className="text-gray-700">
                   We do not sell your personal data. We may share your information with trusted service providers and partners for operational and legal compliance purposes.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">7. International Transfers</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">7. International Transfers</h2>
                 <p className="text-gray-700">
                   Data may be transferred to and processed in jurisdictions outside your own. Where applicable, we use appropriate safeguards such as Standard Contractual Clauses.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">8. Your Rights</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">8. Your Rights</h2>
                 <p className="text-gray-700 mb-4">
                   You may:
                 </p>
@@ -116,14 +116,14 @@ const PrivacyPolicy = () => {
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">9. Cookies</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">9. Cookies</h2>
                 <p className="text-gray-700">
                   See our <Link to="/cookies-policy" className="text-refumo-coral hover:underline">Cookies Policy</Link> for details on how we use cookies.
                 </p>
               </div>
               
               <div>
-                <h2 className="text-2xl font-bold mb-4">10. Contact Us</h2>
+                <h2 className="text-2xl font-display font-semibold mb-4 mt-2">10. Contact Us</h2>
                 <p className="text-gray-700">
                   For privacy-related questions, please contact:
                   <br />
