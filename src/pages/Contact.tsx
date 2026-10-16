@@ -10,11 +10,11 @@ const Contact = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-refumo-darkblue text-white relative pt-32 pb-20 md:pt-40 md:pb-24">
+      <section className="bg-refumo-darkblue text-white relative pt-36 pb-20 md:pt-48 md:pb-28">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-lg mb-6">Contact Us</h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-6">
+            <p className="text-lg md:text-xl text-gray-300/90 leading-relaxed mb-6">
               Let's discuss your investment opportunities
             </p>
           </div>
@@ -36,7 +36,7 @@ const Contact = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral mr-4">
+                    <div className="flex-shrink-0 icon-badge !w-12 !h-12 mr-4">
                       <MapPin size={24} />
                     </div>
                     <div>
@@ -49,7 +49,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral mr-4">
+                    <div className="flex-shrink-0 icon-badge !w-12 !h-12 mr-4">
                       <Phone size={24} />
                     </div>
                     <div>
@@ -59,7 +59,7 @@ const Contact = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral mr-4">
+                    <div className="flex-shrink-0 icon-badge !w-12 !h-12 mr-4">
                       <Mail size={24} />
                     </div>
                     <div>
@@ -76,7 +76,7 @@ const Contact = () => {
               </div>
               
               {/* Contact Form */}
-              <div className="bg-gray-50 p-6 md:p-8 rounded-lg">
+              <div className="bg-gray-50 border border-gray-200/70 p-6 md:p-10 rounded-2xl">
                 <h2 className="heading-sm mb-6">Send Us a Message</h2>
                 <ContactForm />
               </div>

@@ -47,7 +47,7 @@ const Index = () => {
       {/* About Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">WELCOME TO REFUMO INVESTMENTS</h2>
             <p className="text-gray-600 text-lg mb-4">
               Pan-European Property Investment | Value-Driven Strategy | Enduring Relationships
@@ -103,7 +103,7 @@ const Index = () => {
       {/* Services Overview */}
       <section id="services" className="section bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">Our Services at a Glance</h2>
             <p className="text-gray-700">
               Refumo delivers end-to-end advisory solutions across asset classes—residential, commercial, 
@@ -146,7 +146,7 @@ const Index = () => {
       {/* Expertise Section */}
       <section id="expertise" className="section bg-gray-100 scroll-mt-24">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">Our Expertise</h2>
             <p className="text-gray-700">
               With over €3 billion in transactions and 100+ years of combined experience, 

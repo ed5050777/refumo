@@ -10,11 +10,11 @@ const Expertise = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-refumo-darkblue text-white relative pt-32 pb-20 md:pt-40 md:pb-24">
+      <section className="bg-refumo-darkblue text-white relative pt-36 pb-20 md:pt-48 md:pb-28">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-lg mb-6">Our Expertise</h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-6">
+            <p className="text-lg md:text-xl text-gray-300/90 leading-relaxed mb-6">
               With over €15 billion in transactions and 100+ years of combined experience,
               we assess opportunities by merit—not limits.
             </p>
@@ -25,7 +25,7 @@ const Expertise = () => {
       {/* Core Expertise */}
       <section className="section bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">Core Expertise Areas</h2>
             <p className="text-gray-700">
               Our comprehensive expertise enables us to deliver exceptional results across all aspects of real estate investment.
@@ -36,7 +36,7 @@ const Expertise = () => {
             {/* Acquisitions */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral">
+                <div className="icon-badge">
                   <Building size={28} />
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Expertise = () => {
             {/* Due Diligence */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral">
+                <div className="icon-badge">
                   <FileCheck size={28} />
                 </div>
               </div>
@@ -94,7 +94,7 @@ const Expertise = () => {
             {/* Management */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral">
+                <div className="icon-badge">
                   <Users size={28} />
                 </div>
               </div>
@@ -123,7 +123,7 @@ const Expertise = () => {
             {/* Value Creation */}
             <div className="flex gap-6">
               <div className="flex-shrink-0">
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue flex items-center justify-center text-refumo-coral">
+                <div className="icon-badge">
                   <BarChart size={28} />
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Expertise = () => {
       {/* Track Record */}
       <section className="section bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-2xl mx-auto text-center mb-14 md:mb-16">
             <h2 className="heading-md mb-6">Our Track Record</h2>
             <p className="text-gray-700">
               With a proven history of successful investments across Europe, our experience speaks for itself.
@@ -163,22 +163,22 @@ const Expertise = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div className="card-surface text-center">
               <div className="text-4xl font-bold text-refumo-coral mb-2">€3B+</div>
               <p className="text-gray-700">Transaction Volume</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div className="card-surface text-center">
               <div className="text-4xl font-bold text-refumo-coral mb-2">100+</div>
               <p className="text-gray-700">Years Combined Experience</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div className="card-surface text-center">
               <div className="text-4xl font-bold text-refumo-coral mb-2">15+</div>
               <p className="text-gray-700">European Countries</p>
             </div>
             
-            <div className="bg-white p-6 rounded-lg shadow-sm text-center">
+            <div className="card-surface text-center">
               <div className="text-4xl font-bold text-refumo-coral mb-2">200+</div>
               <p className="text-gray-700">Completed Transactions</p>
             </div>
