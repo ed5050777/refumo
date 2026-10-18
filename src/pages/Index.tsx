@@ -216,12 +216,40 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Georg Bucher */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {/* Bakary Sylla */}
+            <div className="bg-white rounded-2xl p-6 lg:p-7 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
               <div>
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue text-refumo-coral flex items-center justify-center font-bold text-xl mb-6">
-                  GB
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-gray-100 shadow-sm bg-gray-50 flex items-center justify-center">
+                  <img 
+                    src="/team/bakary-sylla.png" 
+                    alt="Bakary Sylla" 
+                    className="w-full h-full object-cover grayscale"
+                    loading="lazy"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-refumo-darkblue mb-1">Bakary Sylla</h3>
+                <p className="text-refumo-coral font-medium text-sm mb-4">Managing Partner</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Bakary manages the firm&apos;s financial operations, compliance, and structuring activities, leads the institutional-grade reporting and governance within I-Fumo. He previously held senior roles in fund administration, compliance, and client relations at ATDOMCO, Praxis, Citi, Citco, and ABN AMRO. With over 25 years’ experience, his career spans finance, legal, and entrepreneurial ventures, including founding a hospitality company.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
+                <CheckCircle2 size={16} className="text-refumo-coral mr-1.5" />
+                Senior Leadership Partner
+              </div>
+            </div>
+
+            {/* Georg Bucher */}
+            <div className="bg-white rounded-2xl p-6 lg:p-7 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
+              <div>
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-gray-100 shadow-sm bg-gray-50 flex items-center justify-center">
+                  <img 
+                    src="/team/georg-bucher.png" 
+                    alt="Georg Bucher" 
+                    className="w-full h-full object-cover grayscale"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-refumo-darkblue mb-1">Georg Bucher</h3>
                 <p className="text-refumo-coral font-medium text-sm mb-4">Investment &amp; Structuring</p>
@@ -236,10 +264,15 @@ const Index = () => {
             </div>
 
             {/* Igor Antos */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-2xl p-6 lg:p-7 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
               <div>
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue text-refumo-coral flex items-center justify-center font-bold text-xl mb-6">
-                  IA
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-gray-100 shadow-sm bg-gray-50 flex items-center justify-center">
+                  <img 
+                    src="/team/igor-antos.png" 
+                    alt="Igor Antos" 
+                    className="w-full h-full object-cover grayscale"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-refumo-darkblue mb-1">Igor Antos</h3>
                 <p className="text-refumo-coral font-medium text-sm mb-4">Credit &amp; Underwriting</p>
@@ -254,10 +287,15 @@ const Index = () => {
             </div>
 
             {/* Alon Shamir */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-2xl p-6 lg:p-7 shadow-sm border border-gray-200/70 flex flex-col justify-between hover:shadow-md transition-shadow">
               <div>
-                <div className="w-14 h-14 rounded-full bg-refumo-darkblue text-refumo-coral flex items-center justify-center font-bold text-xl mb-6">
-                  AS
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-6 border-2 border-gray-100 shadow-sm bg-gray-50 flex items-center justify-center">
+                  <img 
+                    src="/team/alon-shamir.png" 
+                    alt="Alon Shamir" 
+                    className="w-full h-full object-cover grayscale"
+                    loading="lazy"
+                  />
                 </div>
                 <h3 className="text-xl font-bold text-refumo-darkblue mb-1">Alon Shamir</h3>
                 <p className="text-refumo-coral font-medium text-sm mb-4">Finance &amp; Operations</p>
