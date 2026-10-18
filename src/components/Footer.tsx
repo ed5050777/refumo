@@ -53,9 +53,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/#contact" className="text-gray-400 hover:text-refumo-coral transition-colors inline-block py-1">
+                <Link to="/contact" className="text-gray-400 hover:text-refumo-coral transition-colors inline-block py-1">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
