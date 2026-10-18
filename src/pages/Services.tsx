@@ -1,4 +1,4 @@
-import { Building, Settings, RefreshCw, Shield, Landmark, LineChart } from "lucide-react";
+import { Building2, BarChart4, Briefcase, Shield, Target } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ServiceCard from "@/components/ServiceCard";
@@ -35,36 +35,37 @@ const Services = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
             <ServiceCard 
+              className="md:col-span-2 lg:col-span-2"
               title="Real Estate Credit Origination"
-              description="Bespoke senior, whole-loan, stretch-senior, and B-note bridge financing (€5m–€50m per transaction) backed by enforceable real estate collateral and conservative leverage."
-              icon={<Building size={32} />}
+              description="Comprehensive capital coverage spanning the entire capital structure—including senior whole loans, stretch-senior, bridge & acquisition facilities, mezzanine debt, subordinated capital, preferred equity, and institutional co-investment (€5m–€50m+ per transaction). We structure bespoke liquidity solutions tailored to sponsor requirements, secured against high-quality real estate collateral across Western Europe."
+              icon={<Building2 size={32} />}
+              bullets={["Senior Whole Loans & Stretch-Senior", "Bridge & Acquisition Facilities", "Mezzanine & Subordinated Debt", "Preferred Equity & Co-Investment"]}
             />
             <ServiceCard 
-              title="Underwriting &amp; Structuring"
-              description="12–36 month target terms with up to 75% LTV / 90% LTC. Robust legal structures, first- or second-ranking charges, share pledges, and clear refinance or sale exits."
-              icon={<Settings size={32} />}
+              title="Underwriting & Structuring"
+              description="Deep institutional underwriting expertise engineered to unlock underlying asset and transaction value. We structure bespoke capital solutions utilizing dedicated securitisation vehicles, corporate SPVs, bond issuance programs, and tailored security packages adapted to the risk profile and commercial circumstances of each opportunity."
+              icon={<BarChart4 size={32} />}
+              bullets={["Value Unlocking", "Securitisation Vehicles & SPVs", "Bespoke Capital Structures"]}
             />
             <ServiceCard 
-              title="Special Situations &amp; Restructuring"
-              description="Principal turnarounds, complex debt workouts, senior debt acquisitions, and recapitalisations of transitional or distressed real estate portfolios across the UK and DACH region."
-              icon={<RefreshCw size={32} />}
+              title="Special Situations & Restructuring"
+              description="Active secondary loan acquisitions, purchasing performing and non-performing debt, navigating complex debt workouts, and executing consensual recapitalisations. We inject rescue capital and turnaround liquidity into transitional, stalled, or distressed real estate portfolios across the UK and DACH region."
+              icon={<Briefcase size={32} />}
+              bullets={["Secondary Loan Acquisitions", "Complex Debt Workouts", "Distressed Recapitalisations"]}
             />
             <ServiceCard 
-              title="Active Oversight &amp; Servicing"
-              description="End-to-end covenant monitoring, security and collateral trusteeship, and active repayment or enforcement management throughout the investment lifecycle."
+              title="Sourcing & Value Realisation"
+              description="Targeted proprietary origination to identify high-conviction off-market opportunities and execute smart entry purchases. We engineer clear, disciplined realization pathways—structuring transactions from inception for seamless refinancing, asset sales, structured loan payoffs, or value-maximizing exits."
+              icon={<Target size={32} />}
+              bullets={["Proprietary Off-Market Sourcing", "Smart Entry Purchases", "Structured Exits & Realisation"]}
+            />
+            <ServiceCard 
+              title="Active Oversight & Servicing"
+              description="End-to-end loan lifecycle management, rigorous covenant monitoring, security and collateral trusteeship, and ongoing compliance oversight throughout the investment lifecycle to safeguard institutional capital and ensure execution certainty."
               icon={<Shield size={32} />}
-            />
-            <ServiceCard 
-              title="Bridge &amp; Acquisition Facilities"
-              description="Fast, reliable debt execution enabling experienced sponsors to complete time-sensitive acquisitions, planning value-add programs, and property repositioning."
-              icon={<Landmark size={32} />}
-            />
-            <ServiceCard 
-              title="Mezzanine &amp; Subordinated Debt"
-              description="Flexible junior capital solutions tailored between senior facilities and sponsor equity to optimize capital structures for high-conviction real estate assets."
-              icon={<LineChart size={32} />}
+              bullets={["Covenant Monitoring", "Collateral Trusteeship", "Capital Protection"]}
             />
           </div>
         </div>
