@@ -268,8 +268,8 @@ const Index = () => {
               amount="€24m+"
               location="Berlin, Germany"
               category="Modular Residential"
-              description="Our team structured and arranged the financing facility, executed through a securitisation vehicle, for a 311-unit modular residential development in Berlin-Spandau. The asset benefits from full planning consent, KfW 55 energy standards, projected annual rent of approx. €2.6m, and forward purchase visibility."
-              tags={["311 Modular Units", "KfW 55 Standard", "Securitisation Vehicle"]}
+              description="Our team structured and arranged the financing facility for a 311-unit modular residential development in Berlin-Spandau. The asset benefits from full planning consent, KfW 55 energy standards, projected annual rent of approx. €2.6m, and forward purchase visibility."
+              tags={["311 Modular Units", "KfW 55 Standard", "Forward Purchase"]}
             />
 
             <TransactionCard 
@@ -277,8 +277,8 @@ const Index = () => {
               amount="€12m"
               location="Valencia, Spain"
               category="Industrial Bridge"
-              description="Our team structured and arranged the bridge financing, executed through a securitisation vehicle, for the acquisition of a strategic self-use industrial facility in Valencia. Secured against approx. 50,000 sqm of built area on a 100,000 sqm site (building value approx. €18m), the facility supports specialised manufacturing, logistics, and warehousing operations."
-              tags={["Building Value: €18m", "100,000 sqm Site", "Securitisation Vehicle"]}
+              description="Our team structured and arranged the bridge financing for the acquisition of a strategic self-use industrial facility in Valencia. Secured against approx. 50,000 sqm of built area on a 100,000 sqm site (building value approx. €18m), the facility supports specialised manufacturing, logistics, and warehousing operations."
+              tags={["Building Value: €18m", "100,000 sqm Site", "Strategic Facility"]}
             />
 
             {/* Institutional Co-Investment & Origination Card */}
