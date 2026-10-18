@@ -353,7 +353,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
                 <CheckCircle2 size={16} className="text-refumo-coral mr-1.5" />
-                Senior Leadership Partner
+                Senior Leadership
               </div>
             </div>
 
@@ -376,7 +376,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
                 <CheckCircle2 size={16} className="text-refumo-coral mr-1.5" />
-                Senior Leadership Partner
+                Senior Leadership
               </div>
             </div>
 
@@ -399,7 +399,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
                 <CheckCircle2 size={16} className="text-refumo-coral mr-1.5" />
-                Senior Leadership Partner
+                Senior Leadership
               </div>
             </div>
 
@@ -422,7 +422,7 @@ const Index = () => {
               </div>
               <div className="mt-6 pt-4 border-t border-gray-100 flex items-center text-xs text-gray-500 font-medium">
                 <CheckCircle2 size={16} className="text-refumo-coral mr-1.5" />
-                Senior Leadership Partner
+                Senior Leadership
               </div>
             </div>
           </div>
