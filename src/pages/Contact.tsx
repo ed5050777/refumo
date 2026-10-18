@@ -13,9 +13,9 @@ const Contact = () => {
       <section className="bg-refumo-darkblue text-white relative pt-36 pb-20 md:pt-48 md:pb-28">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="heading-lg mb-6">Contact Us</h1>
+            <h1 className="heading-lg mb-6">Institutional &amp; Financing Enquiries</h1>
             <p className="text-lg md:text-xl text-gray-300/90 leading-relaxed mb-6">
-              Let's discuss your investment opportunities
+              Connect with our origination and structuring team in London and Luxembourg
             </p>
           </div>
         </div>
@@ -30,8 +30,7 @@ const Contact = () => {
               <div>
                 <h2 className="heading-md mb-6">Get in Touch</h2>
                 <p className="text-gray-700 mb-8">
-                  Whether you're looking to invest, divest, or explore new markets—we're here to collaborate. 
-                  Contact our team today to discuss how we can help you achieve your investment goals.
+                  Connect with our origination and structuring team to discuss real estate credit facilities, senior bridge debt, and institutional co-investment opportunities across the UK, Germany, and Spain.
                 </p>
                 
                 <div className="space-y-6">
@@ -40,10 +39,10 @@ const Contact = () => {
                       <MapPin size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Head Office</h3>
-                          <p className="text-gray-700">
-                        Luxembourg (HQ)<br />
-                        10 Rue Beaumont, L-1219 Luxembourg<br /><br />
+                      <h3 className="font-semibold text-lg mb-1">Offices &amp; Registered Address</h3>
+                      <p className="text-gray-700">
+                        <strong className="text-refumo-darkblue">Luxembourg | London</strong><br />
+                        10 Rue Beaumont, L-1219 Luxembourg<br />
                       </p>
                     </div>
                   </div>
