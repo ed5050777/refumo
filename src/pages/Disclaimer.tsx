@@ -47,7 +47,7 @@ const Disclaimer = () => {
                 1. Nature of the Platform &amp; Corporate Identity
               </h2>
               <p className="mb-3">
-                This website is operated by Refumo Investments (<em>Refumo S.&agrave; r.l.</em>, registered office: 10 Rue Beaumont, L-1219 Luxembourg, together with its affiliated UK and European group entities and operating affiliates, collectively "Refumo"). Refumo is a privately held principal real estate credit, origination, and co-investment group.
+                This website is operated by Refumo Investments (<em>Refumo S.&agrave; r.l.</em>, registered office: 10 Rue Beaumont, L-1219 Luxembourg, together with its affiliated European investment and financing vehicles, collectively "Refumo"). Refumo is a privately held principal real estate credit, origination, and co-investment group.
               </p>
               <p>
                 Refumo is not an authorized financial adviser, retail deposit-taker, or retail investment manager. The firm does not conduct regulated investment management services for retail clients or third-party retail collective investment schemes, nor does it conduct regulated consumer or residential mortgage lending.

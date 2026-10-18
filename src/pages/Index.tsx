@@ -18,7 +18,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-8 px-4 py-1.5 rounded-full border border-white/15 bg-white/5">
               <p className="text-xs md:text-sm font-semibold tracking-[0.18em] uppercase text-refumo-coral">
-                LUXEMBOURG | LONDON — ALTERNATIVE CAPITAL GROUP FOR REAL ESTATE
+                LUXEMBOURG — ALTERNATIVE CAPITAL GROUP FOR REAL ESTATE
               </p>
             </div>
             
@@ -57,10 +57,10 @@ const Index = () => {
             <span className="eyebrow">About Refumo</span>
             <h2 className="heading-md mb-6 text-refumo-darkblue">WELCOME TO REFUMO INVESTMENTS</h2>
             <p className="text-refumo-coral font-medium mb-8">
-              Alternative Capital Group for Real Estate | Real Estate Credit &amp; Special Situations | Luxembourg &amp; London
+              Alternative Capital Group for Real Estate | Real Estate Credit &amp; Special Situations
             </p>
             <p className="text-gray-700 text-lg leading-relaxed">
-              Refumo is an alternative capital group and real estate credit platform based in London and Luxembourg. It is primarily active across Western Europe, especially the UK, Germany, and Spain. The group sources, underwrites, and invests institutional capital in senior debt, whole-loan bridge facilities, and special situations. With over €3 billion in executed transactions and 100+ years of combined leadership experience, the partners deliver speed, certainty of execution, and robust risk-adjusted structures.
+              Refumo is a Luxembourg-based alternative capital group and real estate credit platform. The group is active across Western Europe—principally deploying capital into the UK, Germany, and Spain via Luxembourg investment and financing vehicles. The group sources, underwrites, and invests institutional capital in senior debt, whole-loan bridge facilities, and special situations. With over €3 billion in executed transactions and 100+ years of combined leadership experience, the partners deliver speed, certainty of execution, and robust risk-adjusted structures.
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mt-5">
               As a privately held principal investment and origination group, Refumo aligns directly with its institutional co-investment partners. We originate opportunities, underwrite physical real estate collateral, and structure bespoke bridge and stretch-senior capital—actively monitoring loans, covenants, and exit plans throughout the transaction lifecycle.
@@ -183,7 +183,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             <ExpertiseCard 
               title="Acquisition & Bridge Finance"
-              description="Fast, reliable execution for property acquisitions, bridge-to-sale, and development finance across London, Germany, and Spain—backed by rigorous technical and legal due diligence."
+              description="Fast, reliable execution for property acquisitions, bridge-to-sale, and development finance across the UK, Germany, and Spain—backed by rigorous technical and legal due diligence."
               icon={<Building2 size={32} />}
             />
             <ExpertiseCard 
@@ -279,7 +279,7 @@ const Index = () => {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="heading-md mb-6">Institutional &amp; Financing Enquiries</h2>
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-            Connect with our origination and structuring team in London and Luxembourg to discuss real estate credit facilities, whole-loan structures, and co-investment opportunities.
+            Connect with our origination and structuring team to discuss real estate credit facilities, whole-loan structures, and co-investment opportunities across the UK and Western Europe.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary">

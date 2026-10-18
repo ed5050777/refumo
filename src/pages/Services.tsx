@@ -119,7 +119,7 @@ const Services = () => {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="heading-md mb-6">Institutional &amp; Financing Enquiries</h2>
           <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-            Connect with our origination and structuring team in London and Luxembourg to discuss real estate credit facilities and partnership opportunities.
+            Connect with our origination and structuring team to discuss European real estate credit facilities and partnership opportunities.
           </p>
           <Link to="/contact" className="btn-primary">
             Contact Our Team

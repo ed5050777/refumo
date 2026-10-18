@@ -45,7 +45,7 @@ const Expertise = () => {
               <div>
                 <h3 className="text-xl font-bold mb-3">Acquisition &amp; Bridge Finance</h3>
                 <p className="text-gray-600 mb-4">
-                  Fast, reliable execution for property acquisitions, bridge-to-sale, and development finance across London, Germany, and Spain—backed by rigorous technical and legal due diligence.
+                  Fast, reliable execution for property acquisitions, bridge-to-sale, and development finance across the UK, Germany, and Spain—backed by rigorous technical and legal due diligence.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
@@ -228,7 +228,7 @@ const Expertise = () => {
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="heading-md mb-6">Institutional &amp; Financing Enquiries</h2>
           <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-            Connect with our origination and structuring team in London and Luxembourg to discuss real estate credit facilities and partnership opportunities.
+            Connect with our origination and structuring team to discuss European real estate credit facilities and partnership opportunities.
           </p>
           <Link to="/contact" className="btn-primary">
             Connect With Our Team

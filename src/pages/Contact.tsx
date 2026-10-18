@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="heading-lg mb-6">Institutional &amp; Financing Enquiries</h1>
             <p className="text-lg md:text-xl text-gray-300/90 leading-relaxed mb-6">
-              Connect with our origination and structuring team in London and Luxembourg
+              Connect with our origination and structuring team for transactions across the UK and Western Europe
             </p>
           </div>
         </div>
@@ -39,9 +39,9 @@ const Contact = () => {
                       <MapPin size={24} />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-1">Offices &amp; Registered Address</h3>
+                      <h3 className="font-semibold text-lg mb-1">Registered Address</h3>
                       <p className="text-gray-700">
-                        <strong className="text-refumo-darkblue">Luxembourg | London</strong><br />
+                        <strong className="text-refumo-darkblue">Refumo S.&agrave; r.l. (Headquarters)</strong><br />
                         10 Rue Beaumont, L-1219 Luxembourg<br />
                       </p>
                     </div>

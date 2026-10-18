@@ -55,7 +55,7 @@ const TermsOfService = () => {
                   All content provided is for informational purposes only and does not constitute financial, legal, tax, or investment advice. Nothing on this website constitutes an offer to sell, a solicitation of an offer to buy, or a recommendation to subscribe for any security, debt instrument, or financial product.
                 </p>
                 <p className="text-gray-700 mb-2">
-                  Refumo Investments (<em>Refumo S.&agrave; r.l.</em>, 10 Rue Beaumont, L-1219 Luxembourg, and affiliated UK/European group entities) operates as a principal real estate credit, origination, and co-investment group. Refumo does not conduct regulated investment services for third parties or regulated consumer/residential mortgage lending.
+                  Refumo Investments (<em>Refumo S.&agrave; r.l.</em>, 10 Rue Beaumont, L-1219 Luxembourg, and affiliated European investment and financing vehicles) operates as a principal real estate credit, origination, and co-investment group. Refumo does not conduct regulated investment services for third parties or regulated consumer/residential mortgage lending.
                 </p>
                 <p className="text-gray-700">
                   All commercial real estate financing criteria are strictly limited to corporate special purpose vehicles (SPVs). Any transaction involving regulated structures or jurisdictions is executed solely in conjunction with authorised banking, securitisation, or licensed fund management partners.
@@ -114,7 +114,7 @@ const TermsOfService = () => {
               <div>
                 <h2 className="text-2xl font-display font-semibold mb-4 mt-2">11. Governing Law &amp; Jurisdiction</h2>
                 <p className="text-gray-700">
-                  These Terms and any non-contractual obligations arising out of or in connection with them shall be governed by and construed in accordance with the laws of Luxembourg and England and Wales.
+                  These Terms and any non-contractual obligations arising out of or in connection with them shall be governed by and construed in accordance with the laws of the Grand Duchy of Luxembourg. Any dispute shall be submitted to the exclusive jurisdiction of the competent courts of Luxembourg.
                 </p>
               </div>
               

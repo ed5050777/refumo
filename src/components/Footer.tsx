@@ -19,7 +19,7 @@ const Footer = () => {
 
             <p className="text-gray-400 leading-relaxed text-sm">
               Alternative Capital Group for Real Estate<br />
-              <span className="text-gray-300 font-medium">Luxembourg | London</span>
+              <span className="text-gray-300 font-medium">Luxembourg (Headquarters)</span>
             </p>
           </div>
 
@@ -89,7 +89,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 text-refumo-coral flex-shrink-0" />
                 <span className="text-gray-400">
-                  <strong className="text-white">Luxembourg | London</strong><br />
+                  <strong className="text-white">Refumo S.&agrave; r.l. (Headquarters)</strong><br />
                   10 Rue Beaumont, L-1219 Luxembourg
                 </span>
               </li>
@@ -114,7 +114,7 @@ const Footer = () => {
               IMPORTANT LEGAL &amp; REGULATORY DISCLAIMER:
             </p>
             <p>
-              This website is provided by Refumo Investments (<em>Refumo S.&agrave; r.l.</em>, 10 Rue Beaumont, L-1219 Luxembourg, and affiliated UK/European group entities) for information purposes only and is directed exclusively at institutional counterparties, professional investors (as defined under MiFID II and the UK FCA COBS rules), and commercial corporate borrowers. Nothing on this website constitutes investment advice, a financial promotion to retail clients, an offer to sell, or a solicitation of any offer to buy or subscribe for any security or financial instrument, nor shall it be relied upon in connection with any investment decision. Refumo does not conduct regulated investment services for third parties or regulated consumer/residential mortgage lending. Commercial real estate financing criteria are strictly limited to corporate special purpose vehicles (SPVs); any transaction involving regulated structures or jurisdictions is executed solely in conjunction with authorised banking, securitisation, or licensed fund management partners. Past performance of the leadership team or prior transactions is not indicative of future results.
+              This website is provided by Refumo Investments (<em>Refumo S.&agrave; r.l.</em>, 10 Rue Beaumont, L-1219 Luxembourg, and affiliated European investment vehicles) for information purposes only and is directed exclusively at institutional counterparties, professional investors (as defined under MiFID II and the UK FCA COBS rules), and commercial corporate borrowers. Nothing on this website constitutes investment advice, a financial promotion to retail clients, an offer to sell, or a solicitation of any offer to buy or subscribe for any security or financial instrument, nor shall it be relied upon in connection with any investment decision. Refumo does not conduct regulated investment services for third parties or regulated consumer/residential mortgage lending. Commercial real estate financing criteria are strictly limited to corporate special purpose vehicles (SPVs); any transaction involving regulated structures or jurisdictions is executed solely in conjunction with authorised banking, securitisation, or licensed fund management partners. Past performance of the leadership team or prior transactions is not indicative of future results.
             </p>
           </div>
 
