@@ -213,7 +213,7 @@ const Index = () => {
             <span className="eyebrow">Institutional Track Record</span>
             <h2 className="heading-md mb-6 text-refumo-darkblue">Selected Transactions</h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              A representative selection of real estate credit facilities, whole-loan bridge financings, senior debt acquisitions, and special situations structured, sourced, and led by our team and executed via dedicated securitisation vehicles across Western Europe.
+              A representative selection of real estate credit facilities, whole-loan bridge financings, senior debt acquisitions, and special situations structured, sourced, and executed across Western Europe via dedicated securitisation vehicles and institutional partnerships.
             </p>
           </div>
 
@@ -223,7 +223,7 @@ const Index = () => {
               amount="€31m"
               location="Berlin, Germany"
               category="Senior Bridge"
-              description="Our team structured and arranged a €31m senior financing facility, executed through a dedicated securitisation vehicle, to support the orderly sale of a high-value asset with a GDV of €150m. The facility was arranged over an 18-month term, providing liquidity and balance-sheet flexibility during the disposal phase."
+              description="Structured and arranged a €31m senior financing facility, executed through a dedicated securitisation vehicle, to support the orderly sale of a high-value asset with a GDV of €150m. Arranged over an 18-month term, providing liquidity and balance-sheet flexibility during the disposal phase."
               tags={["GDV: €150m", "18-Month Term", "Securitisation Vehicle"]}
             />
 
@@ -232,7 +232,7 @@ const Index = () => {
               amount="€50m"
               location="London, UK"
               category="Institutional Debt"
-              description="Our team structured and led the €50m bond financing facility, executed through an institutional securitisation vehicle, for the acquisition of residential units in a newly built, income-generating asset purchased at a discount to market value, featuring strong ESG credentials and full regulatory compliance."
+              description="Structured and led a €50m bond financing facility, executed through an institutional securitisation vehicle, for the acquisition of residential units in a newly built, income-generating asset purchased at a discount to market value, featuring strong ESG credentials and full regulatory compliance."
               tags={["Discount to Market", "ESG Credentials", "Securitisation Vehicle"]}
             />
 
@@ -241,7 +241,7 @@ const Index = () => {
               amount="€70m"
               location="Berlin, Germany"
               category="Special Situations"
-              description="Our team sourced and structured the financing package for a prime sponsor on the takeover of a special situation mixed-use redevelopment. Executed via a dedicated securitisation vehicle, our team led the structuring, debt workout, and security framework through to completion."
+              description="Sourced and structured the financing package for a prime sponsor on the takeover of a special situation mixed-use redevelopment. Executed via a dedicated securitisation vehicle, managing the structuring, debt workout, and security framework through to completion."
               tags={["Mixed-Use", "Redevelopment Takeover", "Securitisation Vehicle"]}
             />
 
@@ -250,7 +250,7 @@ const Index = () => {
               amount="€11m"
               location="Düsseldorf, Germany"
               category="Structured Credit"
-              description="Our team sourced, structured, and led a two-tranche refinancing facility, executed through a securitisation vehicle alongside an institutional co-lender, to refinance a €30m industrial site in Düsseldorf. The structure delivered tailored covenants and capital flexibility tied to asset value."
+              description="Sourced, structured, and arranged a two-tranche refinancing facility, executed through a securitisation vehicle alongside an institutional co-lender, to refinance a €30m industrial site in Düsseldorf. The structure delivered tailored covenants and capital flexibility tied to asset value."
               tags={["Asset Value: €30m", "Two-Tranche Facility", "Institutional Co-Lending"]}
             />
 
@@ -259,7 +259,7 @@ const Index = () => {
               amount="£80m"
               location="Nationwide, UK"
               category="Senior Debt Acquisition"
-              description="Our team sourced, structured, and led the acquisition of senior debt secured against a nationwide UK ground rent portfolio with a par value of £200m. Executed through a securitisation vehicle backed by institutional capital, the multi-phase transaction was engineered to support portfolio growth and restructuring."
+              description="Sourced, structured, and arranged the senior debt acquisition secured against a nationwide UK ground rent portfolio with a par value of £200m. Executed through a securitisation vehicle backed by institutional capital, the multi-phase transaction was engineered to support portfolio growth and restructuring."
               tags={["Par Value: £200m", "Nationwide Portfolio", "Securitisation Vehicle"]}
             />
 
@@ -268,7 +268,7 @@ const Index = () => {
               amount="€24m+"
               location="Berlin, Germany"
               category="Modular Residential"
-              description="Our team structured and arranged the financing facility for a 311-unit modular residential development in Berlin-Spandau. The asset benefits from full planning consent, KfW 55 energy standards, projected annual rent of approx. €2.6m, and forward purchase visibility."
+              description="Structured and arranged the financing facility for a 311-unit modular residential development in Berlin-Spandau. The asset benefits from full planning consent, KfW 55 energy standards, projected annual rent of approx. €2.6m, and forward purchase visibility."
               tags={["311 Modular Units", "KfW 55 Standard", "Forward Purchase"]}
             />
 
@@ -277,7 +277,7 @@ const Index = () => {
               amount="€12m"
               location="Valencia, Spain"
               category="Industrial Bridge"
-              description="Our team structured and arranged the bridge financing for the acquisition of a strategic self-use industrial facility in Valencia. Secured against approx. 50,000 sqm of built area on a 100,000 sqm site (building value approx. €18m), the facility supports specialised manufacturing, logistics, and warehousing operations."
+              description="Structured and arranged the bridge financing for the acquisition of a strategic self-use industrial facility in Valencia. Secured against approx. 50,000 sqm of built area on a 100,000 sqm site (building value approx. €18m), the facility supports specialised manufacturing, logistics, and warehousing operations."
               tags={["Building Value: €18m", "100,000 sqm Site", "Strategic Facility"]}
             />
 
