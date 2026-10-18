@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 const navItems = [
   { label: "Focus & Criteria", href: "/#focus-criteria" },
   { label: "Expertise", href: "/#expertise" },
+  { label: "Transactions", href: "/#transactions" },
   { label: "Leadership", href: "/#leadership" },
   { label: "Contact", href: "/#contact" },
 ];

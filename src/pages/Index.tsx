@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ValueCard from "@/components/ValueCard";
 import ServiceCard from "@/components/ServiceCard";
 import ExpertiseCard from "@/components/ExpertiseCard";
+import TransactionCard from "@/components/TransactionCard";
 
 const Index = () => {
   return (
@@ -205,8 +206,124 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Selected Transactions Section */}
+      <section id="transactions" className="section bg-refumo-lightgray scroll-mt-20 border-t border-gray-200/60">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-3xl mx-auto text-center mb-14 md:mb-16">
+            <span className="eyebrow">Institutional Track Record</span>
+            <h2 className="heading-md mb-6 text-refumo-darkblue">Selected Transactions</h2>
+            <p className="text-gray-700 text-lg leading-relaxed">
+              A representative selection of real estate credit facilities, whole-loan bridge financings, senior debt acquisitions, and special situations structured and deployed across Western Europe.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <TransactionCard 
+              title="Bridge to Sell Financing"
+              amount="€31m"
+              location="Berlin, Germany"
+              category="Senior Bridge"
+              description="Our team structured and deployed a €31m senior financing facility to support the sale of a distressed high-value asset with a GDV of €150m. The facility was arranged over an 18-month term, enabling flexibility during the disposal phase."
+              tags={["GDV: €150m", "18-Month Term", "Distressed Asset Sale"]}
+            />
+
+            <TransactionCard 
+              title="Bond Issuance"
+              amount="€50m"
+              location="London, UK"
+              category="Institutional Debt"
+              description="I-Fumo provided financing for the acquisition of residential flats in a newly built, income-generating asset purchased at a discount to market value, with strong ESG credentials and full compliance with applicable regulatory standards."
+              tags={["Discount to Market", "ESG Credentials", "Income-Generating"]}
+            />
+
+            <TransactionCard 
+              title="Special Situation Acquisition"
+              amount="€70m"
+              location="Berlin, Germany"
+              category="Special Situations"
+              description="Our team structured the transaction for a developer on the takeover of a special situation mixed-use redevelopment. I-Fumo secured the €70m transaction and managed the investment through to completion of the takeover."
+              tags={["Mixed-Use", "Redevelopment Takeover", "Restructuring"]}
+            />
+
+            <TransactionCard 
+              title="Senior Refinancing"
+              amount="€11m"
+              location="Düsseldorf, Germany"
+              category="Structured Credit"
+              description="I-Fumo closed a structured loan to refinance a €30m industrial site in Düsseldorf, co-lending with an institutional partner. The two-tranche facility offers flexibility tied to asset value, strengthening its role in the German private credit market."
+              tags={["Asset Value: €30m", "Two-Tranche Facility", "Institutional Co-Lending"]}
+            />
+
+            <TransactionCard 
+              title="Special Situation Financing"
+              amount="£80m"
+              location="Nationwide, UK"
+              category="Senior Debt Acquisition"
+              description="Acquisition of senior debt secured against a nationwide UK ground rent portfolio with a par value of £200m. Backed by institutional capital focused on portfolio growth, the transaction is structured in multiple phases."
+              tags={["Par Value: £200m", "Nationwide Portfolio", "Phased Structure"]}
+            />
+
+            <TransactionCard 
+              title="Student Housing Financing"
+              amount="€24m+"
+              location="Berlin, Germany"
+              category="Modular Residential"
+              description="Refumo supported a structured financing process for a 311-unit modular residential development in Berlin-Spandau. The asset benefits from full residential permission, KfW 55 energy standards, projected annual rent of approx. €2.6m, and institutional forward purchase visibility."
+              tags={["311 Modular Units", "KfW 55 Standard", "€2.6m Projected Rent"]}
+            />
+
+            <TransactionCard 
+              title="Industrial Bridge Financing"
+              amount="€12m"
+              location="Valencia, Spain"
+              category="Industrial Bridge"
+              description="I-Fumo structured bridge financing for the acquisition of a strategic self-use industrial facility in Valencia. The asset comprises approx. 50,000 sqm of built area on a 100,000 sqm site, supporting aluminium profile production, logistics, warehousing, and office operations, with a building value of approx. €18m."
+              tags={["Building Value: €18m", "100,000 sqm Site", "Logistics & Production"]}
+            />
+
+            {/* Institutional Co-Investment & Origination Card */}
+            <div className="bg-gradient-to-br from-refumo-darkblue via-refumo-darkblue to-slate-900 rounded-2xl p-6 lg:p-7 shadow-sm text-white flex flex-col justify-between border border-refumo-coral/30 hover:border-refumo-coral transition-all duration-300 md:col-span-2 lg:col-span-2">
+              <div>
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+                  <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-white/10 text-refumo-coral border border-white/15">
+                    Direct Origination &amp; Syndication
+                  </span>
+                  <span className="inline-flex items-center text-xs font-medium text-gray-300">
+                    UK · Germany · Spain
+                  </span>
+                </div>
+                <div className="mb-3">
+                  <div className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                    €5m – €50m+
+                  </div>
+                  <h3 className="text-base font-bold text-refumo-coral mt-1">
+                    Financing Inquiries &amp; Co-Investment Partnerships
+                  </h3>
+                </div>
+                <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                  Refumo provides rapid indicative terms, underwriting certainty, and flexible capital structures across senior loans, stretch-senior, whole loans, and special situations. We partner alongside banks, institutional debt funds, and family offices.
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-2 text-xs text-gray-400">
+                  <CheckCircle2 size={16} className="text-refumo-coral flex-shrink-0" />
+                  <span>Execution certainty with rapid initial credit decisions</span>
+                </div>
+                <Link
+                  to="/contact"
+                  className="btn-primary w-full sm:w-auto text-center !py-2.5 !px-5 text-sm whitespace-nowrap"
+                >
+                  Discuss an Opportunity
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Leadership / Partners Section (Matching Presentation Slide 9) */}
-      <section id="leadership" className="section bg-refumo-lightgray scroll-mt-20 border-t border-gray-200/60">
+      <section id="leadership" className="section bg-white scroll-mt-20 border-t border-gray-200/60">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-14 md:mb-16">
             <span className="eyebrow">Senior Leadership</span>

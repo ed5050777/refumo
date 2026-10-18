@@ -43,6 +43,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="/#transactions" className="text-gray-400 hover:text-refumo-coral transition-colors inline-block py-1">
+                  Selected Transactions
+                </a>
+              </li>
+              <li>
                 <a href="/#leadership" className="text-gray-400 hover:text-refumo-coral transition-colors inline-block py-1">
                   Leadership
                 </a>
