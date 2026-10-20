@@ -120,7 +120,7 @@ const Disclaimer = () => {
                 <p><strong>Refumo S.&agrave; r.l.</strong></p>
                 <p>10 Rue Beaumont, L-1219 Luxembourg</p>
                 <p>Email: <a href="mailto:info@refumo.com" className="text-refumo-coral hover:underline">info@refumo.com</a></p>
-                <p>Telephone: +44 7488 897774</p>
+                <p>Telephone: +352 2764 4777</p>
               </div>
             </div>
 
